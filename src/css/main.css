@@ -291,6 +291,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 p {
@@ -319,7 +320,7 @@ a {
 .products {
   max-width: 100%;
   margin: 0 auto;
-  background-color: getColor(primary);
+  background-color: #ffb8ca;
 }
 
 @media screen and (max-width: 768px) {
@@ -415,11 +416,11 @@ a {
   border-radius: 24px;
 }
 
-.products__card--two {
+.products__card-two {
   background-color: getColor(accent-color-first);
 }
 
-.products__card--three {
+.products__card-three {
   background-color: getColor(accent-color-second);
 }
 
@@ -439,7 +440,7 @@ a {
   }
 }
 
-.products__card--text {
+.products__text {
   max-width: 200px;
   color: getColor(primary);
   font-weight: bold;
@@ -449,7 +450,7 @@ a {
   letter-spacing: 0.04em;
 }
 
-.products__card--dots {
+.products__dots {
   position: relative;
   width: 6px;
   height: 6px;
@@ -457,11 +458,7 @@ a {
   background: white;
 }
 
-.products__card-btn {
-  padding-bottom: 41px;
-}
-
-.products__card--dots::after {
+.products__dots :after {
   position: absolute;
   left: 10px;
   display: block;
@@ -472,7 +469,7 @@ a {
   background: white;
 }
 
-.products__card--dots::before {
+.products__dots :before {
   position: absolute;
   right: 10px;
   display: block;
@@ -483,90 +480,65 @@ a {
   background: white;
 }
 
-.product--1 {
+.products__dots-btn {
+  padding-bottom: 41px;
+}
+
+.products .product-1 {
   position: relative;
 }
 
-.product--2 {
+.products .product-2 {
   position: relative;
 }
 
-.product--3 {
+.products .product-3 {
   position: relative;
 }
 
-.product--1::before {
-  content: url("/images/products/mobile/ice-cream.png");
-  position: absolute;
-  bottom: 45px;
-  right: -60%;
-}
-
-@media screen and (min-width: 768px) {
-  .product--1::before {
-    content: url("/images/products/tablet/ice-cream.png");
-    bottom: 45px;
-    right: -50%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .product--1::before {
-    content: url("/images/products/desktop/ice-cream.png");
-    bottom: 45px;
-    right: -100%;
-  }
-}
-
-.product--2::before {
-  content: url("/images/products/mobile/ice-coffee.png");
+.products .product--2::before {
+  content: url("./images/products/mobile/ice-coffee.png");
   position: absolute;
   bottom: 45px;
   right: -40%;
 }
 
 @media screen and (min-width: 768px) {
-  .product--2::before {
-    content: url("/images/products/tablet/ice-coffee.png");
+  .products .product--2::before {
+    content: url("./images/products/tablet/ice-coffee.png");
     bottom: 45px;
     right: -40%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .product--2::before {
-    content: url("/images/products/desktop/ice-coffee.png");
+  .products .product--2::before {
+    content: url("./images/products/desktop/ice-coffee.png");
     bottom: 45px;
     right: -90%;
   }
 }
 
-.product--3::before {
-  content: url("/images/products/mobile/milkshake.png");
+.products .product--3::before {
+  content: url("./images/products/mobile/milkshake.png");
   position: absolute;
   bottom: 45px;
   right: -30%;
 }
 
 @media screen and (min-width: 768px) {
-  .product--3::before {
-    content: url("/images/products/tablet/milkshake.png");
+  .products .product--3::before {
+    content: url("./images/products/tablet/milkshake.png");
     bottom: 45px;
     right: -30%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .product--3::before {
-    content: url("/images/desktop/milkshake.png");
+  .products .product--3::before {
+    content: url("./images/products/desktop/milkshake.png");
     bottom: 45px;
     right: -70%;
   }
-}
-
-.container {
-  max-width: 480px;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
