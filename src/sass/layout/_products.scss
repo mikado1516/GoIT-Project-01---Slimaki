@@ -1,7 +1,17 @@
 .products {
+<<<<<<< Updated upstream
   max-width: 100%;
   margin: 0 auto;
   background-color: $main-background-color;
+=======
+  background-color: $third-background-color;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 100%;
+
+>>>>>>> Stashed changes
 
   @media screen and (max-width: 768px) {
     padding: 0 20px;
@@ -21,6 +31,7 @@
     padding: 0 112px;
   }
 
+<<<<<<< Updated upstream
   &__sidetitle {
     color: getColor(decorative-secondary);
     font-family: var(--secondary-font);
@@ -38,6 +49,33 @@
     line-height: 39px;
     text-align: center;
     letter-spacing: 0.04em;
+=======
+  &__header {
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $third-font-color;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 100px;
+    }
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: $secondary-font-color;
+>>>>>>> Stashed changes
     margin-bottom: 141px;
 
     @media screen and (min-width: 768px) {
@@ -51,10 +89,15 @@
 
   &__list {
     list-style: none;
+<<<<<<< Updated upstream
     display: flex;
     flex-direction: column;
     gap: 180px;
     margin-bottom: 98px;
+=======
+    display: block;
+    margin: 0 auto;
+>>>>>>> Stashed changes
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
@@ -67,6 +110,7 @@
       justify-content: center;
       gap: 27px;
       margin-bottom: 119px;
+<<<<<<< Updated upstream
     }
   }
 
@@ -216,4 +260,153 @@
       right: -70%;
     }
   }
+=======
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 130px auto 0px;
+    width: 280px;
+    height: 485px;
+    background: #f0d1a5;
+    border-radius: 24px;
+    padding-top: 161px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  &__item--1 {
+    background: $main-background-color;
+
+    &::before {
+      content: url('/images/mobile/products/ice-cream.png');
+      position: absolute;
+      bottom: 45px;
+      top: -171px;
+      right: 15px;
+      background-color: unset;
+
+      @media screen and (min-width: 768px) {
+        content: url('/images/tablet/products/ice-cream.png');
+        bottom: 45px;
+        left: calc(50% - 110px);
+      }
+
+      @media screen and (min-width: 1280px) {
+        content: url('/images/desktop/products/ice-cream.png');
+        bottom: 45px;
+        left: calc(50% - 167px);
+      }
+    }
+  }
+
+  &__item--2 {
+    background: #f0d1a5;
+
+    &::before {
+      content: url('/images/mobile/products/ice-coffee.png');
+      position: absolute;
+      bottom: 45px;
+      top: 90px;
+
+  @media screen and (min-width: 768px) {
+    content: url('/images/tablet/products/ice-coffee.png');
+    bottom: 45px;
+    left: calc(50% - 110px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    content: url('/src/images/desktop/products/ice-coffee.png');
+    bottom: 45px;
+    left: calc(50% - 167px);
+    }
+  }
+  &__item--3 {
+    background: #c2e297;
+
+    &::before {
+      content: url('/images/mobile/products/milkshakes.png');
+      position: absolute;
+      top: 90px;
+      bottom: 45px;
+      @media screen and (min-width: 768px) {
+    content: url('/images/tablet/products/milkshakes.png');
+    bottom: 45px;
+    left: calc(50% - 110px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    content: url('/images/desktop/products/milkshakes.png');
+    bottom: 45px;
+    left: calc(50% - 167px);
+  
+    }
+  }
+}
+
+  &__name {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $main-font-color;
+  }
+
+  &__details {
+    margin: 66px auto 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $main-font-color;
+    width: 200px;
+    height: 124px;
+    margin-top: 30px;
+  }
+
+  &__arrow {
+    margin: 0 auto;
+  }
+
+  &__decorative {
+    margin: 0 auto;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $main-font-color;
+    margin-top: 30px;
+
+    &::after {
+      position: absolute;
+      content: ' ';
+      width: 6px;
+      height: 6px;
+      left: 20px;
+      border-radius: 50%;
+      background: $main-font-color;
+    }
+    &::before {
+      position: absolute;
+      content: ' ';
+      width: 6px;
+      height: 6px;
+      left: -20px;
+      border-radius: 50%;
+      background: $main-font-color;
+    }
+  }
+}
+>>>>>>> Stashed changes
 }
