@@ -488,15 +488,34 @@ a {
   position: relative;
 }
 
+.products .product :before {
+  content: url("/images/products/mobile/ice-cream.png");
+  position: absolute;
+  bottom: 45px;
+  right: -60%;
+}
+
+@media screen and (min-width: 768px) {
+  .products .product :before {
+    content: url("./images/products/tablet/ice-cream.png");
+    bottom: 45px;
+    right: -50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products .product :before {
+    content: url("./images/products/desktop/ice-cream.png");
+    bottom: 45px;
+    right: -100%;
+  }
+}
+
 .products .product-2 {
   position: relative;
 }
 
-.products .product-3 {
-  position: relative;
-}
-
-.products .product--2::before {
+.products .product :before {
   content: url("./images/products/mobile/ice-coffee.png");
   position: absolute;
   bottom: 45px;
@@ -504,7 +523,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .products .product--2::before {
+  .products .product :before {
     content: url("./images/products/tablet/ice-coffee.png");
     bottom: 45px;
     right: -40%;
@@ -512,14 +531,18 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
-  .products .product--2::before {
+  .products .product :before {
     content: url("./images/products/desktop/ice-coffee.png");
     bottom: 45px;
     right: -90%;
   }
 }
 
-.products .product--3::before {
+.products .product-3 {
+  position: relative;
+}
+
+.products .product :before {
   content: url("./images/products/mobile/milkshake.png");
   position: absolute;
   bottom: 45px;
@@ -527,7 +550,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .products .product--3::before {
+  .products .product :before {
     content: url("./images/products/tablet/milkshake.png");
     bottom: 45px;
     right: -30%;
@@ -535,7 +558,7 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
-  .products .product--3::before {
+  .products .product :before {
     content: url("./images/products/desktop/milkshake.png");
     bottom: 45px;
     right: -70%;
